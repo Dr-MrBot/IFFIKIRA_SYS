@@ -95,27 +95,7 @@ iffikira_sys/
     └── services/           # Gemini API, Live Service, Command Handlers
 ```
 
----
 
-## 🚫 Files NOT to Upload to GitHub (`.gitignore`)
-
-When publishing this repository to GitHub, **never upload sensitive or auto-generated files**. 
-
-The following items are configured in `.gitignore` and **MUST NOT** be committed to GitHub:
-
-| File / Folder | Why It Must NOT Be Uploaded |
-| :--- | :--- |
-| **`.env`** | ❌ **CRITICAL SECURITY RISK**: Contains your private `GEMINI_API_KEY`. Uploading this leaks your secret key. |
-| **`node_modules/`** | ❌ Large folder containing thousands of installed packages (installed via `npm install`). |
-| **`screenshots/`** | ❌ Temporary folder containing screen captures created during runtime. |
-| **`memory.json`** | ❌ Contains personal chat history and local runtime logs. |
-| **`dist/` / `build/`** | ❌ Compiled build artifacts generated at publish time. |
-| **`__pycache__/` / `*.pyc`** | ❌ Python bytecode cache files. |
-
-> [!IMPORTANT]
-> Always keep `.env.example` committed to GitHub as a template so users know what environment variables to set up!
-
----
 
 ## 🚀 Quick Start Guide
 
@@ -131,7 +111,7 @@ The following items are configured in `.gitignore` and **MUST NOT** be committed
 1. **Run Setup**: Double-click **`IFFIKIRA_SETUP.bat`**. This installs all Node.js and Python dependencies and generates your `.env` file.
 2. **Add API Key**: Open `.env` in Notepad and paste your `GEMINI_API_KEY`:
    ```env
-   GEMINI_API_KEY=AIzaSyYourActualApiKeyHere
+   GEMINI_API_KEY=your_gemini_api_key_here
    NODE_ENV=development
    ```
 3. **Launch**: Double-click **`RUN_IFFIKIRA.bat`**.
