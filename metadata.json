@@ -1,0 +1,8 @@
+{
+  "name": "IFFIKIRA_SYS - Savage AI Assistant",
+  "description": "A savage, witty, and roaster Indian female AI system with a hacker-aesthetic UI and Windows control capabilities.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}
